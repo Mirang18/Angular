@@ -1,0 +1,18 @@
+<h1>{{ pageTitle}}</h1>
+
+<img src={{imageUrl}}/>
+<button disabled={{btnStatus}}>Click</button>
+
+<h1>Property Binding</h1>
+<img [src]="image"/>
+
+
+<button [disabled]="btnStatus">Click</button>
+
+
+<button (click)="changeTitle()">ChangeTitle</button>
+<br/>
+
+<input type="text" [(ngModel)]="UserName"/>
+
+<h4>Welcome {{UserName}}</h4>
